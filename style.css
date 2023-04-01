@@ -6,6 +6,7 @@
 
 body{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #333;
 }
 
 .container{
@@ -18,16 +19,28 @@ nav{
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 1rem 0;
+}
+
+nav .logo{
+    font-weight: bold;
 }
 
 nav ul{
     display: flex;
-    gap: 3em;
+    gap: 3rem;
     list-style: none;
 }
 
 li a{
+    display: inline-block;
     color: #333;
+    padding: 2rem;
     text-decoration: none;
+    border-radius: 1rem;
+}
+
+a:hover{
+    background-color: rgb(82, 66, 46);
+    color: aliceblue;
 }
