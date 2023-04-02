@@ -4,12 +4,13 @@
     padding: 0;
 }
 
-body{
+html, body{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    color: #333;
 }
 
 header{
+    position: relative;
     background-color:#fff;
     border-bottom: .05px solid #ececec;
     box-shadow: 0px 1.79871666431427px 5.147097110748291px 0px rgba(0, 0, 0, 0.0394);
@@ -28,14 +29,21 @@ nav{
     margin: 0 auto;
 }
 
-nav li{
-    display: inline-block;
-    text-decoration: none;
-    color: #333;
-    padding: 2rem;
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
 }
 
-nav li:hover{
-    border-bottom: .25px solid blue;
-    color: rgb(66, 66, 255);
+.menu li a{
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+    margin: auto;
+}
+
+.menu li a:hover{
+    background-color: rgb(210, 205, 222);
+    color: blue;
+    border-bottom: .5px solid blue;
 }
