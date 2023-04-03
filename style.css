@@ -1,46 +1,49 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
+html, body{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    color: #333;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+header{
+    position: relative;
+    background-color:#fff;
+    border-bottom: .05px solid #ececec;
+    box-shadow: 0px 1.79871666431427px 5.147097110748291px 0px rgba(0, 0, 0, 0.0394);
+    box-shadow: 0px 4.322566509246826px 12.369190216064453px 0px rgba(0, 0, 0, 0.0565);
+    box-shadow: 0px 8.139008522033691px 23.29008674621582px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 14.518600463867188px 41.545536041259766px 0px rgba(0, 0, 0, 0.0835);
+    box-shadow: 0px 27.155447006225586px 77.70635223388672px 0px rgba(0, 0, 0, 0.1006);
+    box-shadow: 0px 65px 186px 0px rgba(0, 0, 0, 0.14);
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav .logo{
-    font-weight: bold;
-}
-
-nav ul{
+.menu{
     display: flex;
-    gap: 3rem;
     list-style: none;
+    gap: 2rem;
 }
 
-li a{
+.menu li a{
     display: inline-block;
-    color: #333;
     padding: 2rem;
     text-decoration: none;
-    border-radius: 1rem;
+    margin: auto;
 }
 
-a:hover{
-    background-color: rgb(82, 66, 46);
-    color: aliceblue;
+.menu li a:hover{
+    background-color: rgb(210, 205, 222);
+    color: blue;
+    border-bottom: .5px solid blue;
 }
