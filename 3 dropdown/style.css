@@ -1,0 +1,73 @@
+/* -------------------------- */
+/* CSS Reset                  */
+/* -------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------- */
+/* Custom properties          */
+/* -------------------------- */
+
+:root{
+    --ff-sans-serif: 'Red Hat Display', sans-serif;
+
+    --clr-light-primary-text:#333;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* Body defaults */
+
+body{
+    font-family: var(--ff-sans-serif);
+}
+
+/* -------------------------- */
+/* Navigation bar             */
+/* -------------------------- */
+header{
+    height: 6rem;
+    border-bottom: .25px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    padding-left: 2rem;
+}
+
+.primary-links{
+    list-style: none;
+    gap:2rem;
+}
+
+.primary-links li{
+    padding: 1rem;
+}
+
+.primary-links a{
+    display: inline;
+    height: inherit;
+    text-decoration: none;
+    color: var(--clr-light-primary-text);
+}
+
+.chevron-down{
+    display: inline-block;
+    background-image: url(/assets/nav/expand.svg);
+    width: 24px;
+    height: 24px;
+}
