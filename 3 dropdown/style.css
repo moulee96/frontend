@@ -14,60 +14,95 @@
 /* -------------------------- */
 
 :root{
-    --ff-sans-serif: 'Red Hat Display', sans-serif;
+    --ff-redhat-sans: 'Red Hat Display', sans-serif;
 
     --clr-light-primary-text:#333;
-    
-}
+    --clr-light-hover:#ff0000;
 
-.flex{
-    display: flex;
+    --box-shadow:0px 65px 186px rgba(0, 0, 0, 0.14), 0px 27.1554px 77.7064px rgba(0, 0, 0, 0.10064), 0px 14.5186px 41.5455px rgba(0, 0, 0, 0.083455), 0px 8.13901px 23.2901px rgba(0, 0, 0, 0.07), 0px 4.32257px 12.3692px rgba(0, 0, 0, 0.056545), 0px 1.79872px 5.1471px rgba(0, 0, 0, 0.0393604);
+    
 }
 
 .container{
     max-width: 1200px;
-    margin-inline: auto;
+    margin-inline:auto;
 }
 
 /* Body defaults */
 
 body{
-    font-family: var(--ff-sans-serif);
+    font-family: var(--ff-redhat-sans);
 }
 
 /* -------------------------- */
 /* Navigation bar             */
 /* -------------------------- */
+
 header{
-    height: 6rem;
-    border-bottom: .25px solid #ccc;
-    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+nav{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.nav-logo{
-    padding-left: 2rem;
-}
-
-.primary-links{
+ul{
     list-style: none;
-    gap:2rem;
+    display: flex;
 }
 
-.primary-links li{
-    padding: 1rem;
-}
 
-.primary-links a{
-    display: inline;
-    height: inherit;
+ul a{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2rem;
+    /* width: 6rem;
+    height: 6rem; */
+    font-weight: 500;
     text-decoration: none;
     color: var(--clr-light-primary-text);
 }
 
-.chevron-down{
-    display: inline-block;
-    background-image: url(/assets/nav/expand.svg);
-    width: 24px;
-    height: 24px;
+a:hover{
+    border-bottom: .5px solid var(--clr-light-primary-text);
+}
+
+.service{
+    position: relative;
+}
+
+.service-submenu{
+    position: absolute;
+    display: none;
+}
+
+.service-submenu a{
+    background-color: #fff;
+    width: 120%;
+}
+
+.service:hover .service-submenu{
+    display: block;
+}
+
+button{
+    background-color: #007DFC;
+    font-family: var(--ff-redhat-sans);
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover{
+    background-color: #0058b1;
+    cursor: pointer;
+    box-shadow: none;
 }
